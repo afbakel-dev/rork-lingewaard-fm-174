@@ -44,8 +44,7 @@
         }
       ],
       "expo-font",
-      "expo-web-browser",
-      "./plugins/withAirPlayOptimize"
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true
