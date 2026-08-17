@@ -16,6 +16,7 @@
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "lingewaard.radio.apl",
+      "buildNumber": "2",
       "infoPlist": {
         "UIBackgroundModes": [
           "audio"
@@ -28,7 +29,7 @@
         "backgroundColor": "#0F0F18"
       },
       "package": "nl.lingewaard.radio",
-      "versionCode": 1,
+      "versionCode": 2,
       "permissions": []
     },
     "web": {

@@ -21,7 +21,7 @@ import Colors from '@/constants/colors';
 import { getAudioPlayer, type AudioPlayerAPI } from '@/utils/audioPlayer';
 
 const STREAM_URL: string = 'https://totaal-streaming.de/listen/lingewaardfm_nl/radio.mp3';
-const NOW_PLAYING_URL: string = 'https://totaal-streaming.de/listen/lingewaardfm_nl/radio.mp3';
+const NOW_PLAYING_URL: string = 'https://totaal-streaming.de/api/nowplaying/lingewaardfm_nl';
 const WHATSAPP_NUMBER: string = '+31644801621';
 const LOGO_ARTWORK = require('@/assets/images/lingewaard-fm-logo-transparent.png');
 const NOW_PLAYING_PLACEHOLDER: string = 'Klik op play om te luisteren';
@@ -506,6 +506,10 @@ export default function RadioPlayer() {
         </TouchableOpacity>
 
         <Text style={styles.footer}>Lingewaard FM</Text>
+        <Text style={styles.rights} testID="rights-notice">
+          Officiële app van Lingewaard FM. Uitzending onder licentie van Buma/Stemra en Sena.
+          Alleen live luisteren — opnemen of downloaden is niet mogelijk.
+        </Text>
       </View>
     </View>
   );
@@ -735,5 +739,14 @@ const styles = StyleSheet.create({
     textAlign: 'center' as const,
     fontWeight: '400' as const,
     letterSpacing: 0.5,
+  },
+  rights: {
+    color: Colors.textMuted,
+    fontSize: 10,
+    lineHeight: 14,
+    textAlign: 'center' as const,
+    opacity: 0.7,
+    marginTop: 6,
+    paddingHorizontal: 12,
   },
 });
